@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
 project( SVN )
 find_package( OpenCV REQUIRED )
-add_executable( SVN SVN.cpp )
-target_link_libraries( SVN ${OpenCV_LIBS} )
+add_executable( bin/SVN src/SVN.cpp )
+target_link_libraries( bin/SVN ${OpenCV_LIBS} )

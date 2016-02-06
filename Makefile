@@ -99,41 +99,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SVN
+# Target rules for targets named bin/SVN
 
 # Build rule for target.
-SVN: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 SVN
-.PHONY : SVN
+bin/SVN: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bin/SVN
+.PHONY : bin/SVN
 
 # fast build rule for target.
-SVN/fast:
-	$(MAKE) -f CMakeFiles/SVN.dir/build.make CMakeFiles/SVN.dir/build
-.PHONY : SVN/fast
+bin/SVN/fast:
+	$(MAKE) -f CMakeFiles/bin/SVN.dir/build.make CMakeFiles/bin/SVN.dir/build
+.PHONY : bin/SVN/fast
 
-SVN.o: SVN.cpp.o
-.PHONY : SVN.o
+src/SVN.o: src/SVN.cpp.o
+.PHONY : src/SVN.o
 
 # target to build an object file
-SVN.cpp.o:
-	$(MAKE) -f CMakeFiles/SVN.dir/build.make CMakeFiles/SVN.dir/SVN.cpp.o
-.PHONY : SVN.cpp.o
+src/SVN.cpp.o:
+	$(MAKE) -f CMakeFiles/bin/SVN.dir/build.make CMakeFiles/bin/SVN.dir/src/SVN.cpp.o
+.PHONY : src/SVN.cpp.o
 
-SVN.i: SVN.cpp.i
-.PHONY : SVN.i
+src/SVN.i: src/SVN.cpp.i
+.PHONY : src/SVN.i
 
 # target to preprocess a source file
-SVN.cpp.i:
-	$(MAKE) -f CMakeFiles/SVN.dir/build.make CMakeFiles/SVN.dir/SVN.cpp.i
-.PHONY : SVN.cpp.i
+src/SVN.cpp.i:
+	$(MAKE) -f CMakeFiles/bin/SVN.dir/build.make CMakeFiles/bin/SVN.dir/src/SVN.cpp.i
+.PHONY : src/SVN.cpp.i
 
-SVN.s: SVN.cpp.s
-.PHONY : SVN.s
+src/SVN.s: src/SVN.cpp.s
+.PHONY : src/SVN.s
 
 # target to generate assembly for a file
-SVN.cpp.s:
-	$(MAKE) -f CMakeFiles/SVN.dir/build.make CMakeFiles/SVN.dir/SVN.cpp.s
-.PHONY : SVN.cpp.s
+src/SVN.cpp.s:
+	$(MAKE) -f CMakeFiles/bin/SVN.dir/build.make CMakeFiles/bin/SVN.dir/src/SVN.cpp.s
+.PHONY : src/SVN.cpp.s
 
 # Help Target
 help:
@@ -141,12 +141,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... SVN"
+	@echo "... bin/SVN"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... SVN.o"
-	@echo "... SVN.i"
-	@echo "... SVN.s"
+	@echo "... src/SVN.o"
+	@echo "... src/SVN.i"
+	@echo "... src/SVN.s"
 .PHONY : help
 
 

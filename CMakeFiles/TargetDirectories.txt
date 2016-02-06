@@ -1,1 +1,1 @@
-/home/ucsc_uav/Documents/codes/Machine_Learning/SVN/CMakeFiles/SVN.dir
+/home/ucsc_uav/Documents/codes/Machine_Learning/SVN/CMakeFiles/bin/SVN.dir
